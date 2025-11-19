@@ -5,7 +5,7 @@ from telethon import TelegramClient, events
 
 # === CONFIGURATION ===
 api_id = int(os.environ.get("API_ID"))
-api_hash = os.environ.get("API_HASH"))
+api_hash = os.environ.get("API_HASH")
 session_name = 'render_session'
 
 # Liste des canaux sources
@@ -54,3 +54,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+

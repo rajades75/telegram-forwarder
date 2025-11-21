@@ -1,7 +1,10 @@
-from fastapi import FastAPI
+from flask import Flask
 
-app = FastAPI()
+app = Flask(__name__)
 
-@app.get("/")
-def health():
-    return {"status": "ok"}
+@app.route("/")
+def ping():
+    return "Bot Telegram actif"
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
